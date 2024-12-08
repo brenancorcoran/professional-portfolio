@@ -234,7 +234,7 @@ body {
   font-size: 54px;
   font-weight: 600;
   color: #000;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 
 .about-container {
@@ -331,6 +331,22 @@ body {
   padding-bottom: 15px;
 }
 
+.linkedin-btn img {
+  margin-top: 10px;
+    margin-left: 10px;
+  width: 100px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #0966c2;
+  transition: all 0.1s ease;
+
+  &:hover {
+    border-radius: 10px;
+    text-shadow: 0.4px 0 #0966c2, -0.4px 0 #0966c2, 0 0.4px #0966c2,
+      0 0.4px #0966c2;
+  }
+}
+
 /* <-- ABOUT ME RIGHT --> */
 
 .certs .certifications {
@@ -395,7 +411,7 @@ body {
   justify-items: center;
 }
 
-.jjc-website img {
+.jjc-website img:nth-child(2) {
   width: 900px;
 }
 
@@ -404,11 +420,23 @@ body {
   width: 650px;
 }
 
-.jjc-website h2,
-.dinder h2 {
+.jjc-website .jjc-btn,
+.dinder .dinder-btn {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #000;
   text-align: center;
+  margin-top: 10px;
+    margin-left: 10px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  transition: all 0.1s ease;
+
+  &:hover {
+    border-radius: 10px;
+    text-shadow: 0.4px 0 #000, -0.4px 0 #000, 0 0.4px #000,
+      0 0.4px #000;
+  }
 }
