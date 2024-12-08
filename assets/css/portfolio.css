@@ -1,4 +1,414 @@
-/*=================
-==   HOME PAGE  ==
-=================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+/* ==================
+===   HOME PAGE   ===
+================== */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 80px;
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  z-index: 1000;
+  border-bottom: 1px solid #000;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.navbar-logo,
+.navbar-links,
+.navbar-social-btns {
+  flex: 1; /* All sections align evenly */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+}
+
+.navbar-logo img {
+  width: 65px;
+  border-radius: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navbar-logo a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: left;
+  align-items: right;
+  color: #000;
+}
+
+.navbar-links {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 25px;
+}
+
+.navbar-links a {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 2px;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  transition: all 0.1s ease;
+
+  &:hover {
+    border-color: #000;
+    border-radius: 10px;
+    color: #000;
+    text-shadow: 0.4px 0 black, -0.4px 0 black, 0 0.4px black, 0 0.4px black;
+  }
+}
+
+.navbar-social-btns {
+  display: flex;
+  justify-content: right;
+  gap: 25px;
+}
+
+.navbar-social-btns img {
+  width: 40px;
+}
+
+/* ==================
+===      HERO     ===
+================== */
+
+.hero-section {
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.hero {
+  display: grid;
+  padding-top: 180px;
+  padding-bottom: 25px;
+}
+
+.hero h1 {
+  display: grid;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 84px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.hero h2 {
+  display: grid;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #000;
+}
+
+/* <---Animation---> */
+
+.i-am-container {
+  display: grid;
+  place-content: center;
+}
+
+.container p {
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
+    0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.container {
+  color: #f5f5f5;
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.animation {
+  height: 58px;
+  overflow: hidden;
+}
+
+.animation > div > div {
+  height: 2.81rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
+}
+
+.first,
+.second,
+.third {
+  color: #000;
+}
+
+.animation div:first-child {
+  animation: text-animation 20s infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -5.62rem;
+  }
+  30% {
+    margin-top: -5.62rem;
+  }
+  40% {
+    margin-top: -11.24rem;
+  }
+  60% {
+    margin-top: -11.24rem;
+  }
+  70% {
+    margin-top: -5.62rem;
+  }
+  80% {
+    margin-top: -5.62rem;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.hero p {
+  padding-top: 100px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: #000;
+}
+
+/* ==================
+===   ABOUT ME     ===
+================== */
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding-bottom: 100px;
+}
+
+.about-section h1 {
+  padding-top: 25px;
+  display: grid;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  color: #000;
+  padding-bottom: 50px;
+}
+
+.about-container {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+  justify-items: center;
+}
+
+.about-container h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+/* <-- ABOUT ME LEFT --> */
+
+.about-left,
+.about-right {
+  width: 500px;
+  height: auto;
+}
+
+.work-header,
+.edu-header {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+}
+
+.work-header img,
+.edu-header img {
+  width: 65px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.work-header,
+.edu-header a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000;
+  text-align: left;
+}
+
+.work-job .dot,
+.edu-desc .dot {
+  margin-left: 28px;
+}
+
+.work-job .title {
+  margin-left: 33px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  text-align: left;
+}
+
+.edu-desc .title {
+  margin-left: 75px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  text-align: left;
+}
+
+.work-job .timeline,
+.edu-desc .timeline {
+  margin-left: 75px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  color: #000;
+  text-align: left;
+}
+
+#job-2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: #666 solid 0.009px;
+}
+
+#job-3 {
+  padding-bottom: 15px;
+}
+
+/* <-- ABOUT ME RIGHT --> */
+
+.certs .certifications {
+  margin-bottom: 1.5em;
+}
+
+.certs p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+  text-align: left;
+}
+
+.certs a {
+  display: inline-flex;
+  margin: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: rgb(222, 222, 222);
+  width: fit-content;
+}
+
+/* ==================
+===   PROJECTS     ===
+================== */
+
+.projects-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding-bottom: 50px;
+}
+
+.projects-section h1 {
+  padding-top: 25px;
+  display: grid;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  color: #000;
+}
+
+.jjc-website,
+.dinder {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.jjc-website img {
+  width: 900px;
+}
+
+.dinder img {
+  padding-top: 25px;
+  width: 650px;
+}
+
+.jjc-website h2,
+.dinder h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+}
