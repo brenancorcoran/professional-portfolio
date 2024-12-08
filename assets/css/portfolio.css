@@ -108,7 +108,6 @@ body {
 .hero {
   display: grid;
   padding-top: 180px;
-  padding-bottom: 25px;
 }
 
 .hero h1 {
@@ -221,10 +220,10 @@ body {
 ================== */
 
 .about-section {
+  padding-top: 80px;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  padding-bottom: 100px;
 }
 
 .about-section h1 {
@@ -371,6 +370,7 @@ body {
 ================== */
 
 .projects-section {
+  padding-top: 80px;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
